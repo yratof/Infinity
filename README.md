@@ -1,5 +1,4 @@
 # Infinite Comic Plugin
-========
 
 ## Roadmap
 
@@ -25,3 +24,11 @@
 > **Notes**
 > 
 > [Infinite Scrolling](http://airbnb.github.io/infinity/)
+
+
+### SEO 
+
+- Include a Sitemap of all posts.
+- Use HISTORY Api to change the URL when scrolling past posts 
+	- [html5 History](http://www.impressivewebs.com/html5-history-api-syntax/)
+	- [Example of this working](http://scrollsample.appspot.com/items)
