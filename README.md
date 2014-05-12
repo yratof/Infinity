@@ -1,5 +1,16 @@
 # Infinite Comic Plugin
 
+## Changelog
+
+### 12th May 2014 - v0.1a
+
+- Added plugin.php and supporting files
+	- Post type
+	- Shortcode
+	- Taxonomy
+
+---
+
 ## Roadmap
 
 - Create custom post type for "**story**"
