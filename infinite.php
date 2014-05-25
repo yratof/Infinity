@@ -9,8 +9,9 @@
 	Author URI: http://www.formless.me
 */
 
-include_once('inc/post-type.php');
-include_once('inc/taxonomy.php');
+include_once('inc/create-panels-post-type.php');
+include_once('inc/create-chapters-taxonomy.php');
+include_once('inc/create-infinity-page.php');
 include_once('inc/shortcode.php');
 
 // ------------------
@@ -23,11 +24,13 @@ function infinite_add_options() {
 infinite_add_options();
 
 // ------------------
+// This was breaking things commented it out for now
+
 // infinite_showresult will generate the (HTML) output
-function infinite_showresult() {
-	global $wpdb;
+//function infinite_showresult() {
+//	global $wpdb;
 	// get your parameter values from the database
-	$infinite_nb_widgets = get_option('infinite_nb_widgets');
+//	$infinite_nb_widgets = get_option('infinite_nb_widgets');
 	// generate $infinite_result based on ...
 	// (your code)
 	// to do a query in the WP database, use the following line;

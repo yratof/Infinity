@@ -4,9 +4,9 @@ function custom_post_type() {
 	$labels = array(
 		'name'                => _x( 'Panel', 'Post Type General Name', 'text_domain' ),
 		'singular_name'       => _x( 'Panel', 'Post Type Singular Name', 'text_domain' ),
-		'menu_name'           => __( 'Panel', 'text_domain' ),
+		'menu_name'           => __( 'Panels', 'text_domain' ),
 		'parent_item_colon'   => __( 'Parent Panel:', 'text_domain' ),
-		'all_items'           => __( 'All Panel', 'text_domain' ),
+		'all_items'           => __( 'All Panels', 'text_domain' ),
 		'view_item'           => __( 'Panel', 'text_domain' ),
 		'add_new_item'        => __( 'Add New Panel', 'text_domain' ),
 		'add_new'             => __( 'Add New', 'text_domain' ),
@@ -21,7 +21,7 @@ function custom_post_type() {
 		'description'         => __( 'The panels of the comic book', 'text_domain' ),
 		'labels'              => $labels,
 		'supports'            => array( 'title', 'excerpt', 'thumbnail', 'revisions', ),
-		'taxonomies'          => array( 'category', 'post_tag' ),
+		'taxonomies'          => array( 'chapter', 'post_tag' ),
 		'hierarchical'        => false,
 		'public'              => true,
 		'show_ui'             => true,
@@ -36,7 +36,7 @@ function custom_post_type() {
 		'publicly_queryable'  => true,
 		'capability_type'     => 'post',
 	);
-	register_post_type( 'Panels', $args );
+	register_post_type( 'panel', $args );
 
 }
 
